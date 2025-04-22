@@ -1,3 +1,5 @@
+![Launchpad FX Logo](docs/lpfxlogo.png)
+
 # Launchpad FX 🎛️
 
 **Interactive, scriptable, audio-reactive FX engine for Novation Launchpad devices (MK1, MK2, and compatible MIDI controllers).**
