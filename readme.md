@@ -24,7 +24,7 @@
 
 ### 📦 Installation (for development)
 ```bash
-git clone https://github.com/yourusername/lpfx.git
+git clone https://github.com/ematkkona/launchpadfx.git
 cd lpfx
 pip install -e .
 ```

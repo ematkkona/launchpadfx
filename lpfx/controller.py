@@ -7,7 +7,13 @@ from lpfx.input.buttons import listen_buttons
 class LaunchpadController:
     def __init__(self):
         self.device_name = "Launchpad MIDI 1"
+        try:
         self.outport = mido.open_output(self.device_name)
+        self.inport = mido.open_input(self.device_name)
+    except OSError as e:
+        print(f"❌ Failed to open MIDI port '{self.device_name}':", e)
+        print("👉 Tip: run with --select-device to choose the correct one.")
+        raise SystemExit(1)
         self.inport = mido.open_input(self.device_name)
         self.midi_queue = queue.Queue()
         self.running = True
